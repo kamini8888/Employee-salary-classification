@@ -1,31 +1,32 @@
 # 💼 Employee Salary Classification App
 
-This is a Streamlit-based web application that predicts whether an employee earns **>50K** or **≤50K** based on user inputs such as age, education level, occupation, working hours per week, and years of experience.
+This is a Streamlit-based web application that predicts whether an employee earns **>50K** or **≤50K** annually based on user inputs such as age, education level, occupation, working hours per week, and other demographic features.
 
 ---
 
 ## 📌 Project Overview
 
-The app uses a machine learning model trained on a cleaned employee dataset to classify salary classes. It includes:
+The app utilizes a machine learning model trained on the **UCI Adult Census dataset** to classify employee salary classes. The solution includes:
 
-- 📊 Real-time prediction interface using **Streamlit**
-- 📁 Support for **batch prediction** using uploaded CSV files
-- ✅ Easy-to-use sidebar for entering input features
-- 💾 Trained model saved using **Joblib**
+- 📊 **Real-time prediction interface** using Streamlit  
+- 📁 **Batch prediction** support with CSV file uploads  
+- ✅ **Sidebar-based input form** for easy user interaction  
+- 💾 Best-performing model (**Gradient Boosting**) saved with `joblib`  
+- 🌐 Online deployment capability using **Pyngrok**
 
 ---
 
 ## ⚙️ Features
 
-- **Input Fields**: Age, Education, Occupation, Hours per week, Experience
-- **Model Used**: Logistic Regression / Random Forest (based on your project)
-- **Deployment Ready** using tools like Streamlit and Ngrok
+- **Input Fields**: Age, Workclass, Education Level (numeric), Marital Status, Occupation, Relationship, Race, Gender, Capital Gain/Loss, Hours per Week, Native Country  
+- **Model Used**: Multiple algorithms tested; **Gradient Boosting** selected based on performance  
+- **Deployment**: Ready to deploy using **Streamlit** and **Ngrok**
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repo:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/<your-username>/employee-salary-classification.git
